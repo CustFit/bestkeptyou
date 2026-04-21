@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="The Best-Kept Secret Score | Customers Fit" />
-  <meta property="og:description" content="92% of B2B buyers already have a vendor in mind before they begin their search. Are you the one they're thinking of? 2 minutes to find out." />
-  <meta property="og:image" content="https://custfit.github.io/bestkeptyou/preview.jpg" />
+  <meta property="og:title" content="Customer Blind Spot Detector | Customers Fit" />
+  <meta property="og:description" content="Find where customer perception is quietly costing you margin, preference, and growth. 15 questions. Free." />
+  <meta property="og:image" content="https://custfit.github.io/blindspotdetector/preview.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="628" />
-  <meta property="og:url" content="https://custfit.github.io/bestkeptyou/" />
+  <meta property="og:url" content="https://custfit.github.io/blindspotdetector/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Best-Kept Secret Score | Customers Fit" />
-  <meta name="twitter:description" content="92% of B2B buyers already have a vendor in mind before they begin their search. Are you the one they're thinking of?" />
-  <meta name="twitter:image" content="https://custfit.github.io/bestkeptyou/preview.jpg" />
-  <title>The Best-Kept Secret Score | Customers Fit</title>
+  <meta name="twitter:title" content="Customer Blind Spot Detector | Customers Fit" />
+  <meta name="twitter:description" content="Find where customer perception is quietly costing you margin, preference, and growth. 15 questions. Free." />
+  <meta name="twitter:image" content="https://custfit.github.io/blindspotdetector/preview.jpg" />
+  <title>Customer Blind Spot Detector | Customers Fit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -47,7 +47,9 @@
     header {
       background: var(--navy);
       padding: 14px 32px;
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: sticky; top: 0; z-index: 100;
     }
     .header-left { display: flex; flex-direction: column; gap: 2px; }
@@ -59,51 +61,51 @@
     /* HERO */
     .hero {
       background: linear-gradient(150deg, var(--navy) 0%, var(--navy-mid) 50%, #1e5fa3 100%);
-      color: white; text-align: center; padding: 56px 24px 48px;
+      color: white;
+      text-align: center;
+      padding: 56px 24px 48px;
     }
     .hero-eyebrow {
-      font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
-      color: #93c5fd; margin-bottom: 1rem;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #93c5fd;
+      margin-bottom: 1rem;
       display: inline-flex; align-items: center; gap: 0.5rem;
     }
     .hero-eyebrow::before, .hero-eyebrow::after {
       content: ''; display: block; width: 20px; height: 1px; background: #93c5fd; opacity: 0.5;
     }
     .hero h1 {
-      font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 500; line-height: 1.15; color: white; margin-bottom: 1rem;
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 500; line-height: 1.15;
+      color: white; margin-bottom: 1rem;
     }
-    .hero h1 em { font-style: italic; color: #93c5fd; }
-    .hero p { font-size: 17px; color: #dbeafe; max-width: 560px; margin: 0 auto 1.5rem; line-height: 1.75; font-weight: 400; }
-    .hero-stat {
+    .hero p {
+      font-size: 17px; color: #dbeafe;
+      max-width: 580px; margin: 0 auto 1.5rem;
+      line-height: 1.75; font-weight: 400;
+    }
+    .hero-badge {
       display: inline-block;
-      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22);
-      border-radius: 3px; padding: 10px 22px;
-      font-size: 13px; color: #eff6ff; font-weight: 400; letter-spacing: 0.03em;
-      margin-bottom: 1rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 3px;
+      padding: 10px 22px;
+      font-size: 13px; color: #eff6ff;
+      font-weight: 400; letter-spacing: 0.03em;
     }
-    .hero-badge { font-size: 13px; color: #93c5fd; font-style: italic; font-family: var(--font-serif); font-size: 16px; display: block; margin-top: 0.5rem; }
-
-    /* TRUST BAR */
-    .trust-bar {
-      background: white; border-bottom: 1px solid var(--border);
-      display: grid; grid-template-columns: repeat(3, 1fr);
-    }
-    .trust-item {
-      padding: 20px 16px; text-align: center;
-      border-right: 1px solid var(--border);
-    }
-    .trust-item:last-child { border-right: none; }
-    .trust-num { font-family: var(--font-serif); font-size: 2rem; color: var(--blue); font-weight: 500; line-height: 1; margin-bottom: 4px; }
-    .trust-label { font-size: 14px; color: var(--text); font-weight: 400; line-height: 1.4; }
 
     /* CONTAINER */
     .container { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
 
     /* PROGRESS */
     .progress-wrap {
-      background: white; border-radius: 8px; padding: 16px 22px; margin-bottom: 28px;
-      border: 1px solid var(--border); display: flex; align-items: center; gap: 16px;
+      background: white;
+      border-radius: 8px;
+      padding: 16px 22px;
+      margin-bottom: 28px;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; gap: 16px;
       box-shadow: 0 1px 4px rgba(37,99,235,0.07);
     }
     .progress-label { font-size: 13px; color: var(--text); white-space: nowrap; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -113,35 +115,50 @@
 
     /* SECTION CARD */
     .section-card {
-      background: white; border-radius: 10px; margin-bottom: 20px;
-      border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(37,99,235,0.06); overflow: hidden;
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(37,99,235,0.06);
+      overflow: hidden;
     }
     .section-header {
       background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-      padding: 18px 24px; display: flex; align-items: center; gap: 16px;
+      padding: 18px 24px;
+      display: flex; align-items: center; gap: 16px;
     }
-    .section-icon {
-      background: rgba(255,255,255,0.12); color: #93c5fd;
-      font-size: 20px; width: 40px; height: 40px; border-radius: 6px;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    .section-number {
+      background: rgba(255,255,255,0.12);
+      color: #93c5fd;
+      font-size: 18px; font-weight: 600;
+      width: 40px; height: 40px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-family: var(--font-serif);
     }
     .section-title { color: white; font-size: 16px; font-weight: 600; }
     .section-subtitle { color: #dbeafe; font-size: 13px; margin-top: 3px; font-weight: 400; }
     .section-body { padding: 22px 24px; }
 
     /* QUESTIONS */
-    .question-block { margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px solid var(--bg-soft); }
+    .question-block {
+      margin-bottom: 22px; padding-bottom: 22px;
+      border-bottom: 1px solid var(--bg-soft);
+    }
     .question-block:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
     .question-text { font-size: 17px; color: var(--text); line-height: 1.65; margin-bottom: 14px; font-weight: 400; }
-    .question-text strong { color: var(--navy); font-weight: 600; }
 
     /* RATING BUTTONS */
     .rating-row { display: flex; gap: 8px; }
     .rating-btn {
-      flex: 1; height: 46px; border-radius: 6px;
-      border: 1.5px solid var(--border); background: var(--bg-soft);
-      color: var(--muted); font-size: 16px; font-weight: 600;
-      font-family: var(--font-sans); cursor: pointer;
+      flex: 1; height: 46px;
+      border-radius: 6px;
+      border: 1.5px solid var(--border);
+      background: var(--bg-soft);
+      color: var(--muted);
+      font-size: 16px; font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
       transition: all 0.15s ease;
       display: flex; align-items: center; justify-content: center;
     }
@@ -151,25 +168,47 @@
     .rating-btn.sel-3 { background: #fefce8; border-color: var(--mid); color: var(--mid); }
     .rating-btn.sel-4 { background: #f0fdf4; border-color: #4ade80; color: #15803d; }
     .rating-btn.sel-5 { background: #f0fdf4; border-color: var(--high); color: var(--high); }
-    .rating-labels { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); font-weight: 400; }
 
-    /* SECTION SCORE */
+    .rating-labels {
+      display: flex; justify-content: space-between;
+      margin-top: 8px;
+      font-size: 12px; color: var(--muted); font-weight: 400;
+    }
+
+    /* QUICK WIN */
+    .quick-win {
+      background: var(--bg-soft);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin-top: 20px;
+      font-size: 15px; color: var(--text); line-height: 1.65;
+    }
+    .quick-win strong { color: var(--blue); font-weight: 600; }
+
+    /* SECTION SCORE BAR */
     .section-score-bar {
-      background: var(--bg-soft); border-top: 1px solid var(--border);
-      padding: 12px 24px; display: flex; align-items: center; gap: 12px;
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex; align-items: center; gap: 12px;
     }
     .sec-score-label { font-size: 13px; color: var(--text); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
     .sec-score-outer { flex: 1; background: var(--bg-mid); border-radius: 99px; height: 6px; }
     .sec-score-inner { height: 6px; border-radius: 99px; background: var(--blue); transition: width 0.4s; width: 0%; }
     .sec-score-val { font-size: 12px; font-weight: 600; color: var(--blue); min-width: 36px; text-align: right; }
 
-    /* CALC BTN */
+    /* CALCULATE BUTTON */
     .calc-btn {
-      display: block; width: 100%; padding: 17px;
-      background: var(--blue); color: white;
-      font-family: var(--font-sans); font-size: 15px; font-weight: 600;
+      display: block; width: 100%;
+      padding: 17px;
+      background: var(--blue);
+      color: white;
+      font-family: var(--font-sans);
+      font-size: 14px; font-weight: 600;
       letter-spacing: 0.06em; text-transform: uppercase;
-      border: none; border-radius: 6px; cursor: pointer; margin-top: 8px;
+      border: none; border-radius: 6px;
+      cursor: pointer; margin-top: 8px;
       transition: background 0.2s, transform 0.15s;
     }
     .calc-btn:hover { background: var(--navy-mid); transform: translateY(-1px); }
@@ -177,69 +216,121 @@
 
     /* RESULTS */
     .results-card {
-      display: none; background: white; border-radius: 10px; margin-top: 28px;
-      border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(37,99,235,0.1); overflow: hidden;
+      display: none;
+      background: white;
+      border-radius: 10px;
+      margin-top: 28px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 24px rgba(37,99,235,0.1);
+      overflow: hidden;
     }
     .results-header {
       background: linear-gradient(150deg, var(--navy) 0%, var(--navy-mid) 60%, #1e5fa3 100%);
-      padding: 36px 32px; text-align: center; color: white;
+      padding: 36px 32px;
+      text-align: center;
+      color: white;
     }
-    .results-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #dbeafe; margin-bottom: 0.5rem; }
-    .results-header h2 { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 500; margin-bottom: 1.5rem; }
-
-    .scores-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
-    .score-card {
-      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 8px; padding: 1.25rem; text-align: center;
+    .results-eyebrow {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #dbeafe; margin-bottom: 0.5rem;
     }
-    .score-card-label { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #dbeafe; margin-bottom: 8px; }
-    .score-card-num { font-family: var(--font-serif); font-size: 3rem; font-weight: 500; color: white; line-height: 1; }
-    .score-card-denom { font-size: 14px; color: #dbeafe; margin-top: 4px; }
-
+    .results-header h2 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem; font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    .score-circle {
+      width: 116px; height: 116px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.3);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .score-big { font-family: var(--font-serif); font-size: 44px; font-weight: 500; color: white; line-height: 1; }
+    .score-denom { font-size: 14px; color: #bfdbfe; margin-top: 2px; }
     .score-verdict { font-family: var(--font-serif); font-size: 1.7rem; font-style: italic; color: white; margin-bottom: 0.75rem; }
     .score-desc { font-size: 16px; color: #dbeafe; max-width: 480px; margin: 0 auto; line-height: 1.7; font-weight: 400; }
 
     .results-body { padding: 32px; }
-    .results-section-title { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin-bottom: 1rem; }
+    .results-section-title {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text);
+      margin-bottom: 1rem;
+    }
 
     .pillar-row {
       display: flex; align-items: center; gap: 14px;
       margin-bottom: 12px; padding: 13px 16px;
-      border-radius: 7px; background: var(--bg-soft); border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
     }
-    .pillar-name { font-size: 15px; font-weight: 500; color: var(--text); min-width: 160px; }
+    .pillar-name { font-size: 15px; font-weight: 500; color: var(--text); min-width: 180px; }
     .pillar-bar-outer { flex: 1; background: var(--bg-mid); border-radius: 99px; height: 8px; }
     .pillar-bar-inner { height: 8px; border-radius: 99px; transition: width 0.6s; }
-    .pillar-score { font-size: 15px; font-weight: 600; min-width: 40px; text-align: right; }
+    .pillar-score { font-size: 13px; font-weight: 600; min-width: 40px; text-align: right; }
 
-    .insight-box {
-      border-left: 3px solid var(--blue); padding: 18px 22px;
-      margin-top: 20px; background: var(--bg-soft); border-radius: 0 7px 7px 0;
+    .gaps-box {
+      background: #fff8f0; border: 1px solid #fde68a;
+      border-radius: 8px; padding: 18px 22px; margin-top: 20px;
     }
-    .insight-box p { font-size: 16px; color: var(--text); line-height: 1.75; font-weight: 400; }
-    .insight-box p strong { font-weight: 600; color: var(--text); }
-    .insight-close { font-family: var(--font-serif); font-size: 18px; color: var(--muted); font-style: italic; margin-top: 0.75rem; line-height: 1.6; }
+    .gaps-box h4 { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #7c2d12; margin-bottom: 12px; }
+    .gap-item { font-size: 15px; color: #7c2d12; margin-bottom: 10px; padding-left: 20px; position: relative; line-height: 1.6; }
+    .gap-item::before { content: "⚠"; position: absolute; left: 0; font-size: 13px; }
+
+    .strengths-box {
+      background: #f0fdf4; border: 1px solid #86efac;
+      border-radius: 8px; padding: 18px 22px; margin-top: 14px;
+    }
+    .strengths-box h4 { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14532d; margin-bottom: 12px; }
+    .strength-item { font-size: 15px; color: #14532d; margin-bottom: 10px; padding-left: 20px; position: relative; line-height: 1.6; }
+    .strength-item::before { content: "✓"; position: absolute; left: 0; font-weight: 700; }
 
     /* CTA */
     .cta-box {
       background: linear-gradient(135deg, var(--bg-soft), var(--bg-mid));
-      border: 1px solid #bfdbfe; border-radius: 8px;
-      padding: 28px 32px; margin-top: 24px; text-align: center;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 24px;
+      text-align: center;
     }
-    .cta-box h3 { font-family: var(--font-serif); font-size: 1.7rem; font-weight: 500; color: var(--navy); margin-bottom: 0.75rem; }
+    .cta-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.7rem; font-weight: 500;
+      color: var(--navy); margin-bottom: 0.75rem;
+    }
     .cta-box p { font-size: 16px; color: #1f2937; line-height: 1.7; margin-bottom: 1.25rem; font-weight: 400; max-width: 440px; margin-left: auto; margin-right: auto; }
     .cta-btn {
-      display: inline-block; background: var(--blue); color: white;
-      font-family: var(--font-sans); font-size: 15px; font-weight: 600;
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      font-family: var(--font-sans);
+      font-size: 15px; font-weight: 600;
       letter-spacing: 0.06em; text-transform: uppercase;
-      padding: 16px 36px; border-radius: 4px; text-decoration: none;
-      transition: background 0.2s, transform 0.15s; width: 100%; text-align: center;
+      padding: 16px 36px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      width: 100%; text-align: center;
     }
     .cta-btn:hover { background: var(--navy-mid); transform: translateY(-1px); }
-    .cta-note { font-family: var(--font-serif); font-size: 16px; font-style: italic; color: var(--muted); margin-top: 1rem; }
+    .cta-note {
+      margin-top: 1rem; font-style: italic;
+      font-family: var(--font-serif); font-size: 16px; color: var(--muted);
+    }
 
     /* FOOTER */
-    footer { background: var(--navy); color: #dbeafe; text-align: center; padding: 28px 20px; font-size: 14px; font-weight: 400; margin-top: 40px; }
+    footer {
+      background: var(--navy);
+      color: #bfdbfe;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 14px; font-weight: 400;
+      margin-top: 40px;
+    }
     footer a { color: #93c5fd; text-decoration: none; }
     footer a:hover { color: white; }
     .footer-tagline { font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: #e0eaff; margin-bottom: 0.75rem; }
@@ -248,12 +339,9 @@
     @media (max-width: 600px) {
       header { flex-direction: column; gap: 8px; text-align: center; padding: 14px 20px; }
       .hero { padding: 40px 20px 36px; }
-      .trust-bar { grid-template-columns: 1fr; }
-      .trust-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .trust-item:last-child { border-bottom: none; }
       .container { padding: 24px 14px 48px; }
-      .scores-grid { grid-template-columns: 1fr; }
-      .pillar-name { min-width: 120px; font-size: 13px; }
+      .section-body { padding: 18px 16px; }
+      .pillar-name { min-width: 120px; font-size: 12px; }
       .results-body { padding: 24px 18px; }
       .cta-box { padding: 22px 20px; }
     }
@@ -271,25 +359,9 @@
 
 <div class="hero">
   <div class="hero-eyebrow">Diagnostic Tool</div>
-  <h1>The Best-Kept<br><em>Secret Score</em></h1>
-  <p>For founders and business owners who have proven their value — but know they're ready for better clients, better margins, and a business that doesn't drain them.</p>
-  <div class="hero-stat">92% of B2B buyers already have a vendor in mind before they begin their search</div>
-  <span class="hero-badge">6 questions · 2 minutes · Honest answers only</span>
-</div>
-
-<div class="trust-bar">
-  <div class="trust-item">
-    <div class="trust-num">2,500+</div>
-    <div class="trust-label">entrepreneurial teams studied</div>
-  </div>
-  <div class="trust-item">
-    <div class="trust-num">20+</div>
-    <div class="trust-label">years of pattern recognition</div>
-  </div>
-  <div class="trust-item">
-    <div class="trust-num">4%</div>
-    <div class="trust-label">of dissatisfied clients ever complain</div>
-  </div>
+  <h1>Customer Blind Spot Detector</h1>
+  <p>For CEOs and founders of growing businesses — find where customer perception is quietly costing you margin, preference, and growth.</p>
+  <div class="hero-badge">Rate each statement 1–5 · Your lowest scores reveal where clients are most likely drifting</div>
 </div>
 
 <div class="container">
@@ -297,10 +369,10 @@
   <div class="progress-wrap">
     <span class="progress-label">Progress</span>
     <div class="progress-outer"><div class="progress-inner" id="progressBar"></div></div>
-    <div class="progress-count" id="progressCount">0 / 6 answered</div>
+    <div class="progress-count" id="progressCount">0 / 15 answered</div>
   </div>
 
-  <form id="scoreForm">
+  <form id="detectorForm">
     <div id="sections-container"></div>
     <button type="button" class="calc-btn" id="calcBtn" onclick="calculateScore()" disabled>
       See My Results →
@@ -310,18 +382,10 @@
   <div class="results-card" id="resultsCard">
     <div class="results-header">
       <div class="results-eyebrow">Your results</div>
-      <h2>Your Right Client Score</h2>
-      <div class="scores-grid">
-        <div class="score-card">
-          <div class="score-card-label">Acquisition</div>
-          <div class="score-card-num" id="acq-num">–</div>
-          <div class="score-card-denom">/ 15 · front door</div>
-        </div>
-        <div class="score-card">
-          <div class="score-card-label">Retention</div>
-          <div class="score-card-num" id="ret-num">–</div>
-          <div class="score-card-denom">/ 15 · back door</div>
-        </div>
+      <h2>Your Blind Spot Report</h2>
+      <div class="score-circle">
+        <div class="score-big" id="totalScore">0</div>
+        <div class="score-denom">/ 75</div>
       </div>
       <div class="score-verdict" id="scoreVerdict"></div>
       <div class="score-desc" id="scoreDesc"></div>
@@ -329,13 +393,11 @@
     <div class="results-body">
       <div class="results-section-title">Score by area</div>
       <div id="pillarResults"></div>
-      <div class="insight-box">
-        <p id="insightMain"></p>
-        <p class="insight-close" id="insightClose"></p>
-      </div>
+      <div id="gapsBox"></div>
+      <div id="strengthsBox"></div>
       <div class="cta-box">
-        <h3>Find out exactly what this means for your business</h3>
-        <p>A focused working session with Patricia Rubio. You'll walk away knowing your 2–3 highest-priority gaps and precisely what to do about them.</p>
+        <h3>Ready to close these gaps?</h3>
+        <p>A focused working session with Patricia Rubio where we find your highest-priority customer perception gaps and exactly what to do about them.</p>
         <a href="https://calendly.com/patricia-rubio/30min-chat" target="_blank" class="cta-btn">Book a conversation with Patricia →</a>
         <p class="cta-note">No commitment required. Start with a conversation.</p>
       </div>
@@ -354,28 +416,54 @@
 <script>
 const sections = [
   {
-    icon: "→",
-    title: "Front door",
-    subtitle: "Are the right clients finding you?",
-    desc: "92% of B2B buyers already have a vendor in mind before they search. The question isn't whether you're good enough — it's whether you're the one they're thinking of.",
+    number: "01", title: "Purchase Triggers",
+    subtitle: "What actually prompts your clients to call you",
     questions: [
-      { text: "Of all your current clients, how many truly <strong>value what you do</strong> — without you having to explain or justify it?", low: "None of them", high: "All of them" },
-      { text: "How much of your new business comes from <strong>reputation, referrals, or inbound</strong> — people who sought you out?", low: "I hunt every deal", high: "They come to me" },
-      { text: "When a prospect questions your price, <strong>how confident are you</strong> in holding it?", low: "I almost always negotiate down", high: "I never move" }
+      "Do you know the specific moment or pain point that causes a client to reach out — rather than wait?",
+      "Can you identify what finally tips a prospect from considering you to committing?",
+      "Do you understand why clients chose you this time — versus the last time they had a similar need?"
     ],
-    key: "acq"
+    quickWin: "Call three recent clients and ask what specifically made them reach out when they did — not why they chose you, but why they called when they did."
   },
   {
-    icon: "↺",
-    title: "Back door",
-    subtitle: "And once they're in — can you keep them?",
-    desc: "Only 4% of dissatisfied customers ever complain. The other 96% leave quietly. Retention isn't about keeping clients happy — it's about knowing when they're not.",
+    number: "02", title: "Value Perception",
+    subtitle: "What clients actually value vs. what you think they value",
     questions: [
-      { text: "Think about your <strong>three most time-consuming clients</strong>. Are they also your three most profitable?", low: "The drain costs us", high: "Completely aligned" },
-      { text: "How confident are you that your <strong>best client is staying</strong> — not because they have to, but because they actively choose to?", low: "Not sure at all", high: "Completely certain" },
-      { text: "When did you last <strong>actively ask your clients</strong> what they value most — and get a real, unfiltered answer?", low: "I've never asked", high: "I know exactly" }
+      "Can you rank the top three things your best clients say they value about working with you?",
+      "Do you know which parts of your service clients would notice immediately if they disappeared?",
+      "Have you identified which parts of your delivery clients don't value — or don't even notice?"
     ],
-    key: "ret"
+    quickWin: "Ask your three best clients to tell you in their own words what they'd lose if they stopped working with you. The answer will surprise you."
+  },
+  {
+    number: "03", title: "Friction Points",
+    subtitle: "Where clients quietly disengage",
+    questions: [
+      "Do you know at which point in a client relationship satisfaction starts to quietly erode?",
+      "Can you identify where your delivery process creates confusion or unmet expectations?",
+      "Do you know what clients wish you did differently — that they've never told you directly?"
+    ],
+    quickWin: "Map your client journey from contract signed to renewal. Mark every handoff. Those handoffs are where perception breaks down."
+  },
+  {
+    number: "04", title: "Loyalty Drivers",
+    subtitle: "Why your best clients stay — and others don't",
+    questions: [
+      "Do you know what would make your top three clients seriously consider a competitor?",
+      "Can you identify the moments in your service that most strengthen client trust?",
+      "Do you understand why some satisfied clients expand their relationship and others plateau?"
+    ],
+    quickWin: "Compare your top three expanding accounts to your top three plateauing ones. The difference is usually in one specific moment of the relationship."
+  },
+  {
+    number: "05", title: "Word-of-Mouth Catalysts",
+    subtitle: "Why clients refer you — or don't",
+    questions: [
+      "Do you know exactly what your clients tell others when they recommend you?",
+      "Have you identified which specific experiences trigger a referral — and which ones don't?",
+      "Do you understand why some of your happiest clients have never referred anyone?"
+    ],
+    quickWin: "Ask your last three referral sources what they specifically said about you when they made the introduction. That language is your positioning — use it."
   }
 ];
 
@@ -403,31 +491,31 @@ function buildSections() {
     card.className = 'section-card';
     let html = `
       <div class="section-header">
-        <div class="section-icon">${sec.icon}</div>
+        <div class="section-number">${sec.number}</div>
         <div>
           <div class="section-title">${sec.title}</div>
           <div class="section-subtitle">${sec.subtitle}</div>
         </div>
       </div>
       <div class="section-body">
-        <p style="font-size:15px; color:var(--text); line-height:1.7; margin-bottom:20px; font-weight:400;">${sec.desc}</p>
     `;
     sec.questions.forEach((q, qi) => {
       const key = `s${si}q${qi}`;
       html += `
         <div class="question-block">
-          <div class="question-text">${q.text}</div>
+          <div class="question-text">${q}</div>
           <div class="rating-row" id="row-${key}">
             ${[1,2,3,4,5].map(v => `<button type="button" class="rating-btn" data-key="${key}" data-val="${v}" onclick="selectRating('${key}',${v})">${v}</button>`).join('')}
           </div>
-          <div class="rating-labels"><span>${q.low}</span><span>${q.high}</span></div>
+          <div class="rating-labels"><span>Complete blind spot</span><span>Crystal clear</span></div>
         </div>
       `;
     });
+    html += `<div class="quick-win"><strong>Quick win:</strong> ${sec.quickWin}</div>`;
     html += `</div>`;
     html += `
       <div class="section-score-bar">
-        <span class="sec-score-label">${sec.title} score</span>
+        <span class="sec-score-label">${sec.title}</span>
         <div class="sec-score-outer"><div class="sec-score-inner" id="sec-bar-${si}"></div></div>
         <span class="sec-score-val" id="sec-val-${si}">–</span>
       </div>
@@ -455,76 +543,71 @@ function selectRating(key, val) {
     if (ratings[k] !== undefined) { secTotal += ratings[k]; secAnswered++; }
   });
   const maxSec = sections[si].questions.length * 5;
-  const pct = secAnswered > 0 ? secTotal / (secAnswered * 5) : 0;
+  const pct = secAnswered > 0 ? (secTotal / (secAnswered * 5)) * 100 : 0;
   const bar = document.getElementById(`sec-bar-${si}`);
   const valEl = document.getElementById(`sec-val-${si}`);
-  bar.style.width = (pct * 100) + '%';
-  bar.style.background = getColor(pct);
+  bar.style.width = pct + '%';
+  bar.style.background = getColor(secTotal / (secAnswered * 5));
   valEl.textContent = secAnswered === sections[si].questions.length ? secTotal + '/' + maxSec : secTotal + '…';
-  valEl.style.color = getColor(pct);
+  valEl.style.color = getColor(secTotal / (secAnswered * 5));
 }
 
 function calculateScore() {
-  const acq = [0,1,2].reduce((a, qi) => a + (ratings[`s0q${qi}`] || 0), 0);
-  const ret = [0,1,2].reduce((a, qi) => a + (ratings[`s1q${qi}`] || 0), 0);
-  const total = acq + ret;
+  let total = 0;
+  const pillarScores = sections.map((sec, si) => {
+    let s = 0;
+    sec.questions.forEach((_, qi) => { s += ratings[`s${si}q${qi}`] || 0; });
+    total += s;
+    return { title: sec.title, score: s, max: sec.questions.length * 5 };
+  });
 
-  document.getElementById('acq-num').textContent = acq;
-  document.getElementById('ret-num').textContent = ret;
+  document.getElementById('totalScore').textContent = total;
 
-  // Pillar bars
+  let verdict, desc;
+  if (total <= 30) {
+    verdict = "Significant blind spots";
+    desc = "Several areas where customer perception is quietly costing you margin and preference right now. These gaps are findable and fixable — before they show up as a crisis.";
+  } else if (total <= 50) {
+    verdict = "Some critical gaps";
+    desc = "Real strengths, but specific areas where client perception and your delivery are quietly misaligned. Finding these gaps now — before the numbers scream — is exactly the right move.";
+  } else if (total <= 65) {
+    verdict = "Good awareness, room to sharpen";
+    desc = "You understand your clients reasonably well, but there are still gaps that could be costing you. The highest-value clients often come from closing that last 20%.";
+  } else {
+    verdict = "Strong customer clarity";
+    desc = "You have strong visibility into what your clients value. The opportunity now is to embed that insight systematically — so it compounds over time.";
+  }
+  document.getElementById('scoreVerdict').textContent = verdict;
+  document.getElementById('scoreDesc').textContent = desc;
+
   const pillarContainer = document.getElementById('pillarResults');
-  const pillars = [
-    { name: 'Acquisition (front door)', score: acq, max: 15 },
-    { name: 'Retention (back door)', score: ret, max: 15 }
-  ];
   pillarContainer.innerHTML = '';
-  pillars.forEach(p => {
+  pillarScores.forEach(p => {
     const pct = (p.score / p.max) * 100;
     const color = getColor(p.score / p.max);
     pillarContainer.innerHTML += `
       <div class="pillar-row">
-        <div class="pillar-name">${p.name}</div>
+        <div class="pillar-name">${p.title}</div>
         <div class="pillar-bar-outer"><div class="pillar-bar-inner" style="width:${pct}%; background:${color};"></div></div>
         <div class="pillar-score" style="color:${color}">${p.score}/${p.max}</div>
       </div>
     `;
   });
 
-  // Verdict + insight
-  let verdict, desc, main, close;
+  const weak = pillarScores.filter(p => p.score / p.max < 0.5);
+  const strong = pillarScores.filter(p => p.score / p.max >= 0.7);
 
-  if (acq < 8 && ret < 8) {
-    verdict = "Both doors need attention";
-    desc = "Clients aren't finding you the way they should — and the ones you have may be drifting without you knowing.";
-    main = "<strong>Both doors are open — but not to the right people.</strong> You're working hard, but the clients finding you aren't the ones who should be finding you. And the ones you have? Their preference is eroding quietly. This isn't a product problem or a capability problem. It's a visibility and fit problem — and it's fixable, once you can see it clearly.";
-    close = "The gap between where you are and the clients you want is almost always smaller than it looks from the inside.";
-  } else if (acq < 9 && ret >= 10) {
-    verdict = "Strong retention, weak front door";
-    desc = "You keep the clients you get. The problem is who's getting through the door in the first place.";
-    main = "<strong>You keep the clients you get. The problem is who's getting through the door.</strong> Your retention is real — clients stay because you deliver. But the right clients aren't finding you, or they're not seeing you as the obvious choice yet. You're the best-kept secret in your market. That's the only thing standing between you and the growth you're ready for.";
-    close = "The front door is the fix. Not a rebrand, not more marketing — a precise realignment of how your market sees you.";
-  } else if (acq >= 10 && ret < 9) {
-    verdict = "Strong front door, retention at risk";
-    desc = "You're attracting better clients. But preference doesn't hold on its own.";
-    main = "<strong>You're attracting better clients. But preference doesn't stay on its own.</strong> The front door is working. The risk is invisible — by the time a client decides to leave, they've been deciding quietly for months. Silence is not satisfaction. The clients you worked hard to attract deserve the same rigor on the back end.";
-    close = "Preference erosion is the most expensive problem that never shows up on a P&L — until it's too late to fix cheaply.";
-  } else if (total >= 24) {
-    verdict = "Strong on both fronts";
-    desc = "You're operating at a level most businesses never reach. The question is what the ceiling looks like from the outside.";
-    main = "<strong>You're operating at a level most businesses never reach.</strong> Strong acquisition, strong retention. The question worth sitting with: what does the ceiling look like from the outside? How much are you still leaving on the table — in pricing, positioning, or the clients you haven't gone after yet?";
-    close = "The gap at this level isn't visible from inside. That's precisely why it's still there.";
-  } else {
-    verdict = "Real business, clear gap";
-    desc = "You can see the gap. That's already more than most.";
-    main = "<strong>You can see the gap. That's already more than most.</strong> The business is real. The expertise is real. The question is what's standing between where you are and the clients who already need what you offer — and don't know you exist yet.";
-    close = "What looks like a marketing problem is almost always a clarity problem. And clarity has a specific, findable answer.";
-  }
+  document.getElementById('gapsBox').innerHTML = weak.length > 0 ? `
+    <div class="gaps-box">
+      <h4>Your biggest blind spots</h4>
+      ${weak.map(p => `<div class="gap-item">${p.title} (${p.score}/${p.max}) — this is where client perception is most likely working against you.</div>`).join('')}
+    </div>` : '';
 
-  document.getElementById('scoreVerdict').textContent = verdict;
-  document.getElementById('scoreDesc').textContent = desc;
-  document.getElementById('insightMain').innerHTML = main;
-  document.getElementById('insightClose').textContent = close;
+  document.getElementById('strengthsBox').innerHTML = strong.length > 0 ? `
+    <div class="strengths-box">
+      <h4>Your strengths</h4>
+      ${strong.map(p => `<div class="strength-item">${p.title} (${p.score}/${p.max}) — strong clarity here. Protect it.</div>`).join('')}
+    </div>` : '';
 
   const card = document.getElementById('resultsCard');
   card.style.display = 'block';
